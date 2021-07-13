@@ -1,0 +1,133 @@
+/*=======================
+*Google Fonts
+======================= */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+:root {
+  --theme-color: #317eeb;
+  --white-color: rgba(255, 255, 255, 0.7);
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+.container {
+  width: 90%;
+  margin: auto;
+}
+.badgs {
+  background-color: #ef5350;
+  padding: 5px;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff;
+  position: relative;
+  bottom: 13px;
+  right: 10px;
+  transform: translate(-13px, -10px);
+}
+.round-circal {
+  border-radius: 50% !important;
+}
+.main,
+.header {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-areas:
+    "h h h h h h h h h h h h"
+    "m m m c c c c c c c c c"
+    "m m m f f f f f f f f f";
+}
+/*=======================
+*Header Sectio Stayle
+======================= */
+.section-header {
+  background-color: var(--theme-color);
+  grid-area: h;
+  padding: 10px 0;
+}
+.header {
+  grid-template-areas: "l l i m m m m m m m m m";
+  align-items: center;
+}
+.logo {
+  grid-area: l;
+}
+.menu-icon {
+  grid-area: i;
+  cursor: pointer;
+}
+.menu-icon .m-icon {
+  font-size: 20px;
+  color: var(--white-color);
+}
+.header-items {
+  grid-area: m;
+}
+.heaer-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+.heaer-menu > li {
+  margin: 0 15px;
+  cursor: pointer;
+  color: var(--white-color);
+  font-size: 16px;
+  font-weight: 400;
+}
+.heaer-menu > li > .fa-bell {
+  font-size: 20px;
+  font-weight: 400;
+}
+/* .header-items {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-items > nav > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+} */
+/*=======================
+*Menu Sectio Stayle
+======================= */
+.section-menu {
+  background-color: brown;
+  grid-area: m;
+}
+/*=======================
+*Content Sectio Stayle
+======================= */
+.section-content {
+  background-color: goldenrod;
+  grid-area: c;
+}
+/*=======================
+*Footer Sectio Stayle
+======================= */
+.section-footer {
+  background-color: teal;
+  grid-area: f;
+}
